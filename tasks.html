@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo every day</title>
+</head>
+<body class="page-body page-body--tasks">
+<section class="left-sidebar">
+  <a class="logo">
+    <div class="logo-icon">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="logo-title unselectable">To do<br>every<br>day</div>
+  </a>
+  <nav class="sidebar-navigation">
+    <div class="sidebar-navigation-row">
+      <h2>Разделы</h2>
+      <ul class="sidebar-navigation-list">
+        <li class="sidebar-navigation-item sidebar-navigation-item--active"><a style="background-image: url(img/nav-icon/sport.svg)" href="#">Туду лист</a></li>
+        <li class="sidebar-navigation-item"><a style="background-image: url(img/nav-icon/home.svg)" href="#">Чек листы</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-navigation-row">
+      <h2>Категории</h2>
+      <ul class="sidebar-navigation-list">
+        <li class="sidebar-navigation-item sidebar-navigation-item--active"><a style="background-image: url(img/nav-icon/sport.svg)" href="#">Все</a></li>
+        <li class="sidebar-navigation-item"><a style="background-image: url(img/nav-icon/home.svg)" href="#">Дом</a></li>
+        <li class="sidebar-navigation-item"><a style="background-image: url(img/nav-icon/family.svg)" href="#">Семья</a></li>
+        <li class="sidebar-navigation-item"><a style="background-image: url(img/nav-icon/work.svg)" href="#">Работа</a></li>
+      </ul>
+      <a class="add-link" href="#"><span></span>Добавить</a>
+    </div>
+    <div class="sidebar-navigation-row">
+      <h2>Данные</h2>
+      <ul class="sidebar-navigation-list">
+        <li class="sidebar-navigation-item"><a style="background-image: url(img/nav-icon/statistics.svg)" href="#">Статистика</a></li>
+        <li class="sidebar-navigation-item"><a style="background-image: url(img/nav-icon/compare.svg)" href="#">Сравнить</a></li>
+      </ul>
+    </div>
+  </nav>
+</section>
+<main class="container-widgets">
+  <header class="page-header">
+    <a class="btn page-header-btn-add" href="#">Новая задача</a>
+    <div class="personal-menu">
+      <a class="personal-profile-link" href="#">
+        <div class="greeting">Хорошего дня, Екатерина</div>
+        <img width="44" height="44" src="img/header__avatar.jpg" alt="Аватар пользователя">
+      </a>
+      <a class="personal-menu-link"><i class="arrow arrow-down">Меню</i></a>
+    </div>
+  </header>
+  <section class="columns">
+    <div class="column column-tasks">
+<!--      <div class="widget">-->
+<!--        <header class="widget-header">-->
+<!--          <h2>Успехи за неделю</h2>-->
+<!--          <a class="widget-link-menu"><span class="three-dots"></span></a>-->
+<!--        </header>-->
+<!--        <section class="widget-content">-->
+<!--          <ul class="statistic-list">-->
+<!--            <li class="statistic-item">-->
+<!--              <div class="statistic-item-title">Создано</div>-->
+<!--              <div class="statistic-item-count">-->
+<!--                <div class="statistic-item-figure">113</div>-->
+<!--                <div class="statistic-item-unit">Задач</div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="statistic-item">-->
+<!--              <div class="statistic-item-title">Завершено</div>-->
+<!--              <div class="statistic-item-count">-->
+<!--                <div class="statistic-item-figure">97</div>-->
+<!--                <div class="statistic-item-unit">Задач</div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="statistic-item">-->
+<!--              <div class="statistic-item-title">Удалено</div>-->
+<!--              <div class="statistic-item-count">-->
+<!--                <div class="statistic-item-figure">14</div>-->
+<!--                <div class="statistic-item-unit">Задач</div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </section>-->
+<!--      </div>-->
+      <div class="widget">
+        <header class="widget-header">
+          <h2>Сегодня</h2>
+          <a class="widget-link-menu"><span class="three-dots"></span></a>
+        </header>
+        <section class="widget-content">
+          <div class="widget-columns">
+            <div class="widget-column widget-clock">12:30:43</div>
+            <div class="widget-column widget-calendar"><span class="week">Понедельник, </span>5 апреля 2021</div>
+            <div class="widget-column widget-cloud">-8<sup>o</sup>   C</div>
+          </div>
+        </section>
+      </div>
+      <div class="widget widget-tasks">
+        <header class="widget-header">
+          <h2>Задачи на сегодня</h2>
+          <a class="widget-link-menu select-date">Выберите дату</a>
+        </header>
+        <section class="widget-content">
+          <ul class="tasks-list">
+            <li class="task-item">
+              <label>
+                <input type="checkbox" class="task-item-input-checkbox visually-hidden">
+                <span class="task-item-checkbox"></span>
+                <span class="task-item-task-title unselectable">Первая задача</span>
+              </label>
+              <div class="task-item-edit">
+                <a class="task-item-edit-link">Редактировать</a>
+                <a class="task-item-delete-link">Удалить</a>
+              </div>
+            </li>
+            <li class="task-item">
+              <label>
+                <input type="checkbox" class="task-item-input-checkbox visually-hidden" checked>
+                <span class="task-item-checkbox"></span>
+                <span class="task-item-task-title unselectable">Вторая задача</span>
+              </label>
+              <div class="task-item-edit">
+                <a class="task-item-edit-link">Редактировать</a>
+                <a class="task-item-delete-link">Удалить</a>
+              </div>
+            </li>
+            <li class="task-item">
+              <label>
+                <input type="checkbox" class="task-item-input-checkbox visually-hidden">
+                <span class="task-item-checkbox"></span>
+                <span class="task-item-task-title unselectable">Третья задача</span>
+              </label>
+              <div class="task-item-edit">
+                <a class="task-item-edit-link">Редактировать</a>
+                <a class="task-item-delete-link">Удалить</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="column">
+      <div class="widget">
+        <header class="widget-header">
+          <h2>Цитата дня</h2>
+          <a class="widget-link-menu"><span class="three-dots"></span></a>
+        </header>
+        <section class="widget-content">
+          <blockquote class="quote-block">
+            <p class="quote">Если будем в состоянии с благодарностью переносить приключающиеся бедствия, то изгладим немалую часть грехов наших</p>
+            <p class="author">Святитель Иоанн Златоуст</p>
+          </blockquote>
+        </section>
+
+      </div>
+      <div class="widget">
+        <header class="widget-header">
+          <h2>Журнал мечты</h2>
+          <a class="widget-link-menu"><span class="three-dots"></span></a>
+        </header>
+        <section class="widget-content">
+
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
